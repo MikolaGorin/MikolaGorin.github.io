@@ -1,0 +1,494 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Галерея профілів грунтів України 1979 р. М.І.Полупан, О.І.Мальований (Згруповані за материнською породою)</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 17%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 66%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 10%;
+  transition: 1s all;
+  transform: scale (0.9);
+}
+
+div.gallery:hover {
+  <!-- border: 2px solid #777;
+  transform: rotate (15deg) scale (1.0); -->
+  /* opacity: 0.5; */
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 10px;
+  text-align: center;
+  height: 200px;
+}
+
+div.mp {
+   padding: 5px;
+   font-size: 20px;
+}
+div.mp:hover {
+   color: white;
+   background-color: grey;
+}
+
+</style>
+</head>
+<body>
+<div class="row">
+<div class="column side">
+<div class="mp" id="ndap" onclick="myFunction(this.id)">  На давньоалюіальних пісках (1)</div>
+<div class="mp" id="nvlp" onclick="myFunction(this.id)">  На водно-льодовикових пісках (6)</div>
+<div class="mp" id="nvls" onclick="myFunction(this.id)">  На водно-льодовикових суглинках (4)</div>
+<div class="mp" id="nvlsup" onclick="myFunction(this.id)">На водно-льодовикових супісках (1)</div>
+<div class="mp" id="nm" onclick="myFunction(this.id)">    На морені (1)</div>
+<div class="mp" id="nos" onclick="myFunction(this.id)">   На озерних суглинках (1)</div>
+<div class="mp" id="torf" onclick="myFunction(this.id)">  Торф (2)</div>
+<div class="mp" id="nl" onclick="myFunction(this.id)">    На лесах (17)</div>
+<div class="mp" id="nls" onclick="myFunction(this.id)">   На лесовидних суглинках (8)</div>
+<div class="mp" id="nol" onclick="myFunction(this.id)">   На оглеєних лесах (4)</div>
+<div class="mp" id="m" onclick="myFunction(this.id)">     Мочарні (1)</div>
+<div class="mp" id="nav" onclick="myFunction(this.id)">   На алювіальних відкладах (3)</div>
+<div class="mp" id="nekp" onclick="myFunction(this.id)">  На елювії крейдяних порід (1)</div>
+<div class="mp" id="negs" onclick="myFunction(this.id)">  На елювії глинистих сланців (4)</div>
+<div class="mp" id="neps" onclick="myFunction(this.id)">  На елювії піщанистих сланців (2)</div>
+<div class="mp" id="nep" onclick="myFunction(this.id)">   На елювії піщаників (1)</div>
+<div class="mp" id="nes" onclick="myFunction(this.id)">   На елювії сланців (1)</div>
+<div class="mp" id="ncg" onclick="myFunction(this.id)">   На червоноколірних глинах (1)</div>
+<div class="mp" id="nzpg" onclick="myFunction(this.id)">  На засолених палеогенових глинах (1)</div>
+<div class="mp" id="neddp" onclick="myFunction(this.id)"> На елюво-делювії дрібнозернистого піщаника (1)</div>
+<div class="mp" id="nedab" onclick="myFunction(this.id)"> На елюво-делювії андезито базальтів (2)</div>
+<div class="mp" id="nds" onclick="myFunction(this.id)">   На делювіальних суглинках (3)</div>
+<div class="mp" id="ndoav" onclick="myFunction(this.id)"> На давніх озерно-алювіальних відкладах (1)</div>
+<div class="mp" id="ndgd" onclick="myFunction(this.id)">  На давньому глинистому делювії (1)</div>
+<div class="mp" id="ndv" onclick="myFunction(this.id)">   На делювії вапняків (1)</div>
+
+</div>
+
+<div class="column middle">
+<div class="gallery logo">  
+    <a target="_blank" href="krupskiy_nk_polupan_ni_red_atlas_pochv_ukrainskoy_ssr.pdf">  
+	<img src="atlas.jpg" alt="Some Picture" width="200" height="400"> </a>  
+	<div class="desc">Атлас грунтів Української РСР Крупський М.К. Полупан Н.І.</div> 
+</div>
+<div class="gallery ndap" hidden>  
+	<a target="_blank" href="01_a_Дернові_глинисто-піщані_ґрунти_на_давньоалювіальних_пісках.jpg">  
+	<img id="img1" onmouseover="myCanvas(this.id)" src="01_a_Дернові_глинисто-піщані_ґрунти_на_давньоалювіальних_пісках.jpg " alt="1 a. Дернові глинисто-піщані ґрунти на давньоалювіальних пісках" width="200" height="400"> </a>
+	<div class="desc">1 a. Дернові глинисто-піщані ґрунти на давньоалювіальних пісках </div> 
+</div>
+<div class="gallery nvlp" hidden>  
+	<a target="_blank" href="01_b_Дерново-слабкопідзолисті_глинисто-піщані_ґрунти_на_водно-льодовикових_пісках.jpg">  
+	<img id="img2" onmouseover="myCanvas(this.id)" src="01_b_Дерново-слабкопідзолисті_глинисто-піщані_ґрунти_на_водно-льодовикових_пісках.jpg " alt="1 b. Дерново-слабкопідзолисті глинисто-піщані ґрунти на водно-льодовикових пісках" width="200" height="400"> </a>  
+	<div class="desc">1 b. Дерново-слабкопідзолисті глинисто-піщані ґрунти на водно-льодовикових пісках </div> 
+</div>
+<div class="gallery nvlp" hidden>  
+	<a target="_blank" href="02_a_Дерново-слабкопідзолисті_глинисто-піщані_ґрунти_на_водно-льодовикових_пісках,_прошарованих_мореной.jpg">  
+	<img id="img3" onmouseover="myCanvas(this.id)" src="02_a_Дерново-слабкопідзолисті_глинисто-піщані_ґрунти_на_водно-льодовикових_пісках,_прошарованих_мореной.jpg " alt="2 a. Дерново-слабкопідзолисті глинисто-піщані ґрунти на водно-льодовикових пісках, прошарованих мореной" width="200" height="400">   </a>
+	<div class="desc">2 a. Дерново-слабкопідзолисті глинисто-піщані ґрунти на водно-льодовикових пісках, прошарованих мореной </div> 
+</div>
+<div class="gallery nvlp" hidden>  
+	<a target="_blank" href="02_b_Дерново-слабкопідзолисті_супіщані_ґрунти_на_шаруватих_водно-льодовикових_пісках.jpg">  
+	<img id="img4" onmouseover="myCanvas(this.id)" src="02_b_Дерново-слабкопідзолисті_супіщані_ґрунти_на_шаруватих_водно-льодовикових_пісках.jpg " alt="2 b. Дерново-слабкопідзолисті супіщані ґрунти на шаруватих водно-льодовикових пісках" width="200" height="400">   </a>
+	<div class="desc">2 b. Дерново-слабкопідзолисті супіщані ґрунти на шаруватих водно-льодовикових пісках </div> 
+</div>
+<div class="gallery nvlp" hidden>  
+	<a target="_blank" href="03_a_Дерново-середньопідзолисті_глинисто-піщані_ґрунти_на_водно-льодовикових_пісках.jpg">  
+	<img id="img5" onmouseover="myCanvas(this.id)" src="03_a_Дерново-середньопідзолисті_глинисто-піщані_ґрунти_на_водно-льодовикових_пісках.jpg " alt="3 a. Дерново-середньопідзолисті глинисто-піщані ґрунти на водно-льодовикових пісках" width="200" height="400">   </a>
+	<div class="desc">3 a. Дерново-середньопідзолисті глинисто-піщані ґрунти на водно-льодовикових пісках </div> 
+</div>
+<div class="gallery nvlp" hidden>  
+	<a target="_blank" href="03_b_Дерново-середньопідзолисті_супіщані_ґрунти_на_шаруватих_водно-льодовикових_пісках.jpg">  
+	<img id="img6" onmouseover="myCanvas(this.id)" src="03_b_Дерново-середньопідзолисті_супіщані_ґрунти_на_шаруватих_водно-льодовикових_пісках.jpg " alt="3 b. Дерново-середньопідзолисті супіщані ґрунти на шаруватих водно-льодовикових пісках" width="200" height="400">   </a>
+	<div class="desc">3 b. Дерново-середньопідзолисті супіщані ґрунти на шаруватих водно-льодовикових пісках </div> 
+</div>
+<div class="gallery nvls" hidden>  
+	<a target="_blank" href="04_Дерново-середньопідзолисті_легкосуглинисті_ґрунти_на_водно-льодовикових_суглинках,_підстилаємих_шаруватими_пісками.jpg">  
+	<img id="img7" onmouseover="myCanvas(this.id)" src="04_Дерново-середньопідзолисті_легкосуглинисті_ґрунти_на_водно-льодовикових_суглинках,_підстилаємих_шаруватими_пісками.jpg " alt="4. Дерново-середньопідзолисті легкосуглинисті ґрунти на водно-льодовикових суглинках, підстилаємих шаруватими пісками" width="200" height="400">   </a>
+	<div class="desc">4. Дерново-середньопідзолисті легкосуглинисті ґрунти на водно-льодовикових суглинках, підстилаємих шаруватими пісками </div> 
+</div>
+<div class="gallery nm" hidden>  
+	<a target="_blank" href="05_Дерново-середньопідзолисті_легкосуглинсті_ґрунти_на_морені.jpg">  
+	<img id="img8" onmouseover="myCanvas(this.id)" src="05_Дерново-середньопідзолисті_легкосуглинсті_ґрунти_на_морені.jpg " alt="5. Дерново-середньопідзолисті легкосуглинсті ґрунти на морені" width="200" height="400">   </a>
+	<div class="desc">5. Дерново-середньопідзолисті легкосуглинсті ґрунти на морені </div> 
+</div>
+<div class="gallery nos" hidden>  
+	<a target="_blank" href="06_Підзолисто-дернові_легкосуглинисті_ґрунти_на_озерних_суглинках.jpg">  
+	<img id="img9" onmouseover="myCanvas(this.id)" src="06_Підзолисто-дернові_легкосуглинисті_ґрунти_на_озерних_суглинках.jpg " alt="6. Підзолисто-дернові легкосуглинисті ґрунти на озерних суглинках" width="200" height="400">   </a>
+	<div class="desc">6. Підзолисто-дернові легкосуглинисті ґрунти на озерних суглинках </div> 
+</div>
+<div class="gallery nvlp" hidden>  
+	<a target="_blank" href="07_a_Дерново-слабкопідзолисті_глеюваті_глинисто-піщані_ґрунти_на_водно-льодовикових_пісках.jpg">  
+	<img id="img10" onmouseover="myCanvas(this.id)" src="07_a_Дерново-слабкопідзолисті_глеюваті_глинисто-піщані_ґрунти_на_водно-льодовикових_пісках.jpg " alt="7 a. Дерново-слабкопідзолисті глеюваті глинисто-піщані ґрунти на водно-льодовикових пісках" width="200" height="400">   </a>
+	<div class="desc">7 a. Дерново-слабкопідзолисті глеюваті глинисто-піщані ґрунти на водно-льодовикових пісках </div> 
+</div>
+<div class="gallery nvls" hidden>  
+	<a target="_blank" href="07_b_Дерново-середньопідзолисті_глеюваті_легкосуглинисті_ґрунти_на_водно-льодовикових_суглинках.jpg">  
+	<img id="img11" onmouseover="myCanvas(this.id)" src="07_b_Дерново-середньопідзолисті_глеюваті_легкосуглинисті_ґрунти_на_водно-льодовикових_суглинках.jpg " alt="7 b. Дерново-середньопідзолисті глеюваті легкосуглинисті ґрунти на водно-льодовикових суглинках" width="200" height="400">   </a>
+	<div class="desc">7 b. Дерново-середньопідзолисті глеюваті легкосуглинисті ґрунти на водно-льодовикових суглинках </div> 
+</div>
+<div class="gallery nvlsup" hidden>  
+	<a target="_blank" href="08_Дерново-середньопідзолисті_глейові_супіщані_ґрунти_на_водно-льодовикових_супісках.jpg">  
+	<img id="img12" onmouseover="myCanvas(this.id)" src="08_Дерново-середньопідзолисті_глейові_супіщані_ґрунти_на_водно-льодовикових_супісках.jpg " alt="8.Дерново-середньопідзолисті глейові супіщані ґрунти на водно-льодовикових супісках" width="200" height="400">   </a>
+	<div class="desc">8.Дерново-середньопідзолисті глейові супіщані ґрунти на водно-льодовикових супісках </div> 
+</div>
+<div class="gallery nekp" hidden>  
+	<a target="_blank" href="09_Дерново-карбонатні_ґрунти_на_елювії_крейдяних_порід.jpg">  
+	<img id="img13" onmouseover="myCanvas(this.id)" src="09_Дерново-карбонатні_ґрунти_на_елювії_крейдяних_порід.jpg " alt="9. Дерново-карбонатні ґрунти на елювії крейдяних порід" width="200" height="400">   </a>
+	<div class="desc">9. Дерново-карбонатні ґрунти на елювії крейдяних порід </div> 
+</div>
+<div class="gallery nvls" hidden>  
+	<a target="_blank" href="10_Дернові_глеюваті_легкосуглинисті_ґрунти_на_водно-льодовикових_суглинках.jpg">  
+	<img id="img14" onmouseover="myCanvas(this.id)" src="10_Дернові_глеюваті_легкосуглинисті_ґрунти_на_водно-льодовикових_суглинках.jpg " alt="10. Дернові глеюваті легкосуглинисті ґрунти на водно-льодовикових суглинках" width="200" height="400">   </a>
+	<div class="desc">10. Дернові глеюваті легкосуглинисті ґрунти на водно-льодовикових суглинках </div> 
+</div>
+<div class="gallery nvls" hidden>  
+	<a target="_blank" href="11_Дернові_глейові_легкосуглинисті_ґрунти_на_водно-льодовикових_суглинках.jpg">  
+	<img id="img15" onmouseover="myCanvas(this.id)" src="11_Дернові_глейові_легкосуглинисті_ґрунти_на_водно-льодовикових_суглинках.jpg " alt="11. Дернові глейові легкосуглинисті ґрунти на водно-льодовикових суглинках" width="200" height="400">   </a>
+	<div class="desc">11. Дернові глейові легкосуглинисті ґрунти на водно-льодовикових суглинках </div> 
+</div>
+<div class="gallery torf" hidden>  
+	<a target="_blank" href="12_Торф’яники_низинні_солончакові.jpg">  
+	<img id="img16" onmouseover="myCanvas(this.id)" src="12_Торф’яники_низинні_солончакові.jpg " alt="12. Торф'яники низинні солончакові" width="200" height="400">   </a>
+	<div class="desc">12. Торф'яники низинні солончакові </div> 
+</div>
+<div class="gallery nl" hidden>  
+	<a target="_blank" href="13_Світло-сірі_опідзолені_ґрунти_на_лесах.jpg">  
+	<img id="img17" onmouseover="myCanvas(this.id)" src="13_Світло-сірі_опідзолені_ґрунти_на_лесах.jpg " alt="13. Світло-сірі опідзолені ґрунти на лесах" width="200" height="400">   </a>
+	<div class="desc">13. Світло-сірі опідзолені ґрунти на лесах </div> 
+</div>
+<div class="gallery nl" hidden>  
+	<a target="_blank" href="14_Сірі_опідзолені_ґрунти_на_лесах.jpg">  
+	<img id="img18" onmouseover="myCanvas(this.id)" src="14_Сірі_опідзолені_ґрунти_на_лесах.jpg " alt="14. Сірі опідзолені ґрунти на лесах" width="200" height="400">   </a>
+	<div class="desc">14. Сірі опідзолені ґрунти на лесах </div> 
+</div>
+<div class="gallery nl" hidden>  
+	<a target="_blank" href="15_Темно-сірі_опідзолені_ґрунти_на_лесах.jpg">  
+	<img id="img19" onmouseover="myCanvas(this.id)" src="15_Темно-сірі_опідзолені_ґрунти_на_лесах.jpg " alt="15. Темно-сірі опідзолені ґрунти на лесах" width="200" height="400">   </a>
+	<div class="desc">15. Темно-сірі опідзолені ґрунти на лесах </div> 
+</div>
+<div class="gallery nl" hidden>  
+	<a target="_blank" href="16_Чорноземи_опідзолені_на_лесах.jpg">  
+	<img id="img20" onmouseover="myCanvas(this.id)" src="16_Чорноземи_опідзолені_на_лесах.jpg " alt="16. Чорноземи опідзолені на лесах" width="200" height="400">   </a>
+	<div class="desc">16. Чорноземи опідзолені на лесах </div> 
+</div>
+<div class="gallery nl" hidden>  
+	<a target="_blank" href="17_Темно-сірі_реградовані_ґрунти_на_лесах.jpg">  
+	<img id="img21" onmouseover="myCanvas(this.id)" src="17_Темно-сірі_реградовані_ґрунти_на_лесах.jpg " alt="17. Темно-сірі реградовані ґрунти на лесах" width="200" height="400">   </a>  
+	<div class="desc">17. Темно-сірі реградовані ґрунти на лесах </div> 
+</div>
+<div class="gallery nl" hidden>  
+	<a target="_blank" href="18_Чорноземи_реградовані_на_лесах.jpg">  
+	<img id="img22" onmouseover="myCanvas(this.id)" src="18_Чорноземи_реградовані_на_лесах.jpg " alt="18. Чорноземи реградовані на лесах" width="200" height="400">   </a>  
+	<div class="desc">18. Чорноземи реградовані на лесах </div> 
+</div>
+<div class="gallery nl" hidden>  
+	<a target="_blank" href="19_Чорноземи_типові_глибокі_малогумусні_на_лесах.jpg">  
+	<img id="img23" onmouseover="myCanvas(this.id)" src="19_Чорноземи_типові_глибокі_малогумусні_на_лесах.jpg " alt="19. Чорноземи типові глибокі малогумусні на лесах" width="200" height="400">   </a>  
+	<div class="desc">19. Чорноземи типові глибокі малогумусні на лесах </div> 
+</div>
+<div class="gallery nls" hidden>  
+	<a target="_blank" href="20_Чорноземи_типові_вологі_глибокі_малогумусні_на_лесовидних_суглинках.jpg">  
+	<img id="img24" onmouseover="myCanvas(this.id)" src="20_Чорноземи_типові_вологі_глибокі_малогумусні_на_лесовидних_суглинках.jpg " alt="20. Чорноземи типові вологі глибокі малогумусні на лесовидних суглинках" width="200" height="400">   </a>  
+	<div class="desc">20. Чорноземи типові вологі глибокі малогумусні на лесовидних суглинках </div> 
+</div>
+<div class="gallery nl" hidden>  
+	<a target="_blank" href="21_Чорноземи_типові_глибокі_середньогумусні_на_лесах.jpg">  
+	<img id="img25" onmouseover="myCanvas(this.id)" src="21_Чорноземи_типові_глибокі_середньогумусні_на_лесах.jpg " alt="21. Чорноземи типові глибокі середньогумусні на лесах" width="200" height="400">   </a>  
+	<div class="desc">21. Чорноземи типові глибокі середньогумусні на лесах </div> 
+</div>
+<div class="gallery nls" hidden>  
+	<a target="_blank" href="22_Лучно-чорноземні_ґрунти_на_лесовидних_суглинках.jpg">  
+	<img id="img26" onmouseover="myCanvas(this.id)" src="22_Лучно-чорноземні_ґрунти_на_лесовидних_суглинках.jpg " alt="22. Лучно-чорноземні ґрунти на лесовидних суглинках" width="200" height="400">   </a>  
+	<div class="desc">22. Лучно-чорноземні ґрунти на лесовидних суглинках </div> 
+</div>
+<div class="gallery nls" hidden>  
+	<a target="_blank" href="23_Лучно-чорноземні_глибоко-середньосолонцюваті_солончакові_ґрунти_на_лесовидних_суглинках.jpg">  
+	<img id="img27" onmouseover="myCanvas(this.id)" src="23_Лучно-чорноземні_глибоко-середньосолонцюваті_солончакові_ґрунти_на_лесовидних_суглинках.jpg " alt="23. Лучно-чорноземні глибоко-середньосолонцюваті солончакові ґрунти на лесовидних суглинках" width="200" height="400">   </a>  
+	<div class="desc">23. Лучно-чорноземні глибоко-середньосолонцюваті солончакові ґрунти на лесовидних суглинках </div> 
+</div>
+<div class="gallery nls" hidden>  
+	<a target="_blank" href="24_Лучно-чорноземні_поверхнево_слабкосолнцюваті_содово-солончакові_ґрунти_на_лесовидних_суглинках.jpg">  
+	<img id="img28" onmouseover="myCanvas(this.id)" src="24_Лучно-чорноземні_поверхнево_слабкосолнцюваті_содово-солончакові_ґрунти_на_лесовидних_суглинках.jpg " alt="24. Лучно-чорноземні поверхнево слабкосолнцюваті содово-солончакові ґрунти на лесовидних суглинках" width="200" height="400">   </a>  
+	<div class="desc">24. Лучно-чорноземні поверхнево слабкосолнцюваті содово-солончакові ґрунти на лесовидних суглинках </div> 
+</div>
+<div class="gallery nls" hidden>  
+	<a target="_blank" href="25_Лучно-чорноземні_осолоділі_(западинні)_ґрунти_на_лесовидних_суглинках.jpg">  
+	<img id="img29" onmouseover="myCanvas(this.id)" src="25_Лучно-чорноземні_осолоділі_(западинні)_ґрунти_на_лесовидних_суглинках.jpg " alt="25. Лучно-чорноземні осолоділі (западинні) ґрунти на лесовидних суглинках" width="200" height="400">   </a>  
+	<div class="desc">25. Лучно-чорноземні осолоділі (западинні) ґрунти на лесовидних суглинках </div> 
+</div>
+<div class="gallery m" hidden>  
+	<a target="_blank" href="26_Лучно-чорноземні_солонцюваті_солончакові_мочарні_ґрунти.jpg">  
+	<img id="img30" onmouseover="myCanvas(this.id)" src="26_Лучно-чорноземні_солонцюваті_солончакові_мочарні_ґрунти.jpg " alt="26. Лучно-чорноземні солонцюваті солончакові мочарні ґрунти" width="200" height="400">   </a>  
+	<div class="desc">26. Лучно-чорноземні солонцюваті солончакові мочарні ґрунти </div> 
+</div>
+<div class="gallery nls" hidden>  
+	<a target="_blank" href="27_Солонці_лучно-чорноземні_коркові_стовбчасті_солончакові_на_лесовидних_суглинках.jpg">  
+	<img id="img31" onmouseover="myCanvas(this.id)" src="27_Солонці_лучно-чорноземні_коркові_стовбчасті_солончакові_на_лесовидних_суглинках.jpg " alt="27. Солонці лучно-чорноземні коркові стовбчасті солончакові на лесовидних суглинках" width="200" height="400">   </a>  
+	<div class="desc">27. Солонці лучно-чорноземні коркові стовбчасті солончакові на лесовидних суглинках </div> 
+</div>
+<div class="gallery nls" hidden>  
+	<a target="_blank" href="28_Солонці_лучно-чорноземні_глибокі_стобчасті_солончакуваті_на_лесовидних_суглинах.jpg">  
+	<img id="img32" onmouseover="myCanvas(this.id)" src="28_Солонці_лучно-чорноземні_глибокі_стобчасті_солончакуваті_на_лесовидних_суглинах.jpg " alt="28. Солонці лучно-чорноземні глибокі стобчасті солончакуваті на лесовидних суглинах" width="200" height="400">   </a>  
+	<div class="desc">28. Солонці лучно-чорноземні глибокі стобчасті солончакуваті на лесовидних суглинах </div> 
+</div>
+<div class="gallery nls" hidden>  
+	<a target="_blank" href="29_Лучні_суглинисті_ґрунти_на_лесовидних_суглинках.jpg">  
+	<img id="img33" onmouseover="myCanvas(this.id)" src="29_Лучні_суглинисті_ґрунти_на_лесовидних_суглинках.jpg " alt="29. Лучні суглинисті ґрунти на лесовидних суглинках" width="200" height="400">   </a>  
+	<div class="desc">29. Лучні суглинисті ґрунти на лесовидних суглинках </div> 
+</div>
+<div class="gallery nav" hidden>  
+	<a target="_blank" href="30_Лучні_поверхнево_солонцюваті_суглинисті_ґрунти_на_алювіальних_відкладах.jpg">  
+	<img id="img34" onmouseover="myCanvas(this.id)" src="30_Лучні_поверхнево_солонцюваті_суглинисті_ґрунти_на_алювіальних_відкладах.jpg " alt="30. Лучні поверхнево солонцюваті суглинисті ґрунти на алювіальних відкладах" width="200" height="400">   </a>  
+	<div class="desc">30. Лучні поверхнево солонцюваті суглинисті ґрунти на алювіальних відкладах </div> 
+</div>
+<div class="gallery nav" hidden>  
+	<a target="_blank" href="31_Лучно-болотні_солонцюваті_солончакові_суглинисті_ґрунти_на_алювіальних_відкладах.jpg">  
+	<img id="img35" onmouseover="myCanvas(this.id)" src="31_Лучно-болотні_солонцюваті_солончакові_суглинисті_ґрунти_на_алювіальних_відкладах.jpg " alt="31. Лучно-болотні солонцюваті солончакові суглинисті ґрунти на алювіальних відкладах" width="200" height="400">   </a>  
+	<div class="desc">31. Лучно-болотні солонцюваті солончакові суглинисті ґрунти на алювіальних відкладах </div> 
+</div>
+<div class="gallery nav" hidden>  
+	<a target="_blank" href="32_Болотні_солонцюваті_солончакові_суглинисті_ґрунти_на_алювіальних_відкладах.jpg">  
+	<img id="img36" onmouseover="myCanvas(this.id)" src="32_Болотні_солонцюваті_солончакові_суглинисті_ґрунти_на_алювіальних_відкладах.jpg " alt="32. Болотні солонцюваті солончакові суглинисті ґрунти на алювіальних відкладах" width="200" height="400">   </a>  
+	<div class="desc">32. Болотні солонцюваті солончакові суглинисті ґрунти на алювіальних відкладах </div> 
+</div>
+<div class="gallery torf" hidden>  
+	<a target="_blank" href="33_Торф’яно-болотні_солончакові_грунти.jpg">  
+	<img id="img37" onmouseover="myCanvas(this.id)" src="33_Торф’яно-болотні_солончакові_грунти.jpg " alt="33. Торф'яно-болотні солончакові грунти" width="200" height="400">   </a>  
+	<div class="desc">33. Торф'яно-болотні солончакові грунти </div> 
+</div>
+<div class="gallery nl" hidden>  
+	<a target="_blank" href="34_Чорноземи_звичайні_глибокі_середньогумусні_на_лесах.jpg">  
+	<img id="img38" onmouseover="myCanvas(this.id)" src="34_Чорноземи_звичайні_глибокі_середньогумусні_на_лесах.jpg " alt="34. Чорноземи звичайні глибокі середньогумусні на лесах" width="200" height="400">   </a>  
+	<div class="desc">34. Чорноземи звичайні глибокі середньогумусні на лесах </div> 
+</div>
+<div class="gallery nl" hidden>  
+	<a target="_blank" href="35_Чорноземи_звичайні_глибокі_малогумусні_на_лесах.jpg">  
+	<img id="img39" onmouseover="myCanvas(this.id)" src="35_Чорноземи_звичайні_глибокі_малогумусні_на_лесах.jpg " alt="35. Чорноземи звичайні глибокі малогумусні на лесах" width="200" height="400">   </a>  
+	<div class="desc">35. Чорноземи звичайні глибокі малогумусні на лесах </div> 
+</div>
+<div class="gallery nl" hidden>  
+	<a target="_blank" href="36_Чорноземи_звичайні_середньоглибокі_малогумусні_на_лесах.jpg">  
+	<img id="img40" onmouseover="myCanvas(this.id)" src="36_Чорноземи_звичайні_середньоглибокі_малогумусні_на_лесах.jpg " alt="36. Чорноземи звичайні середньоглибокі малогумусні на лесах" width="200" height="400">   </a>  
+	<div class="desc">36. Чорноземи звичайні середньоглибокі малогумусні на лесах </div> </div>
+<div class="gallery negs" hidden>  
+	<a target="_blank" href="37_Чорноземи_на_елювії_глинистих_сланців.jpg">  
+	<img id="img41" onmouseover="myCanvas(this.id)" src="37_Чорноземи_на_елювії_глинистих_сланців.jpg " alt="37. Чорноземи на елювії глинистих сланців" width="200" height="400">   </a>  
+	<div class="desc">37. Чорноземи на елювії глинистих сланців </div> 
+</div>
+<div class="gallery neps" hidden>  
+	<a target="_blank" href="38_Чорноземи_на_елювії_піщанистих_сланців.jpg">  
+	<img id="img42" onmouseover="myCanvas(this.id)" src="38_Чорноземи_на_елювії_піщанистих_сланців.jpg " alt="38. Чорноземи на елювії піщанистих сланців" width="200" height="400">   </a>  
+	<div class="desc">38. Чорноземи на елювії піщанистих сланців </div> 
+</div>
+<div class="gallery nep" hidden>  
+	<a target="_blank" href="39_Чорноземи_на_елювії_піщаників.jpg">  
+	<img id="img43" onmouseover="myCanvas(this.id)" src="39_Чорноземи_на_елювії_піщаників.jpg " alt="39. Чорноземи на елювії піщаників" width="200" height="400">   </a>  
+	<div class="desc">39. Чорноземи на елювії піщаників </div> 
+</div>
+<div class="gallery ncg" hidden>  
+	<a target="_blank" href="40_Чорноземи_на_червоноколірних_глинах.jpg">  
+	<img id="img44" onmouseover="myCanvas(this.id)" src="40_Чорноземи_на_червоноколірних_глинах.jpg " alt="40. Чорноземи на червоноколірних глинах" width="200" height="400">   </a>  
+	<div class="desc">40. Чорноземи на червоноколірних глинах </div> 
+</div>
+<div class="gallery nzpg" hidden>  
+	<a target="_blank" href="41_Чорноземи_сильносолонюцваті_солончакові_на_засолених_палеогенових_глинах.jpg">  
+	<img id="img45" onmouseover="myCanvas(this.id)" src="41_Чорноземи_сильносолонюцваті_солончакові_на_засолених_палеогенових_глинах.jpg " alt="41. Чорноземи сильносолонюцваті солончакові на засолених палеогенових глинах" width="200" height="400">   </a>  
+	<div class="desc">41. Чорноземи сильносолонюцваті солончакові на засолених палеогенових глинах </div> 
+</div>
+<div class="gallery negs" hidden>  
+	<a target="_blank" href="42_a_Чорноземи_короткопрофільні_на_елювії_глинистих_сланців.jpg">  
+	<img id="img46" onmouseover="myCanvas(this.id)" src="42_a_Чорноземи_короткопрофільні_на_елювії_глинистих_сланців.jpg " alt="42 a. Чорноземи короткопрофільні на елювії глинистих сланців" width="200" height="400">   </a>  
+	<div class="desc">42 a. Чорноземи короткопрофільні на елювії глинистих сланців </div> 
+</div>
+<div class="gallery neps" hidden>  
+	<a target="_blank" href="42_b_Чорноземи_короткопрофільні_на_елювії_піщанистих_сланців.jpg">  
+	<img id="img47" onmouseover="myCanvas(this.id)" src="42_b_Чорноземи_короткопрофільні_на_елювії_піщанистих_сланців.jpg " alt="42 b. Чорноземи короткопрофільні на елювії піщанистих сланців" width="200" height="400">   </a>  
+	<div class="desc">42 b. Чорноземи короткопрофільні на елювії піщанистих сланців </div> 
+</div>
+<div class="gallery nl" hidden>  
+	<a target="_blank" href="43_Чорноземи_південні_на_лесах.jpg">  
+	<img id="img48" onmouseover="myCanvas(this.id)" src="43_Чорноземи_південні_на_лесах.jpg " alt="43. Чорноземи південні на лесах" width="200" height="400">   </a>  
+	<div class="desc">43. Чорноземи південні на лесах </div> 
+</div>
+<div class="gallery nl" hidden>  
+	<a target="_blank" href="44_Чорноземи_південні_міцелярно-карбонтані_на_лесах.jpg">  
+	<img id="img49" onmouseover="myCanvas(this.id)" src="44_Чорноземи_південні_міцелярно-карбонтані_на_лесах.jpg " alt="44. Чорноземи південні міцелярно-карбонтані на лесах" width="200" height="400">   </a>  
+	<div class="desc">44. Чорноземи південні міцелярно-карбонтані на лесах </div> 
+</div>
+<div class="gallery nl" hidden>  
+	<a target="_blank" href="45_Темно-каштанові_солонцюваті_ґрунти_(цілинні)_на_лесах.jpg">  
+	<img id="img50" onmouseover="myCanvas(this.id)" src="45_Темно-каштанові_солонцюваті_ґрунти_(цілинні)_на_лесах.jpg " alt="45. Темно-каштанові солонцюваті ґрунти (цілинні) на лесах" width="200" height="400">   </a>  
+	<div class="desc">45. Темно-каштанові солонцюваті ґрунти (цілинні) на лесах </div> 
+</div>
+<div class="gallery nl" hidden>  
+	<a target="_blank" href="46_Темно-каштанові_солонцюваті_ґрунти_(орні)_на_лесах.jpg">  
+	<img id="img51" onmouseover="myCanvas(this.id)" src="46_Темно-каштанові_солонцюваті_ґрунти_(орні)_на_лесах.jpg " alt="46. Темно-каштанові солонцюваті ґрунти (орні) на лесах" width="200" height="400">   </a>  
+	<div class="desc">46. Темно-каштанові солонцюваті ґрунти (орні) на лесах </div> 
+</div>
+<div class="gallery nl" hidden>  
+	<a target="_blank" href="47_Каштанові_солонцюваті_ґрунти_на_лесах.jpg">  
+	<img id="img52" onmouseover="myCanvas(this.id)" src="47_Каштанові_солонцюваті_ґрунти_на_лесах.jpg " alt="47. Каштанові солонцюваті ґрунти на лесах" width="200" height="400">   </a>  
+	<div class="desc">47. Каштанові солонцюваті ґрунти на лесах </div> 
+</div>
+<div class="gallery nl" hidden>  
+	<a target="_blank" href="48_Солонці_каштанові_середні_на_лесах.jpg">  
+	<img id="img53" onmouseover="myCanvas(this.id)" src="48_Солонці_каштанові_середні_на_лесах.jpg " alt="48. Солонці каштанові середні на лесах" width="200" height="400">   </a>  
+	<div class="desc">48. Солонці каштанові середні на лесах </div> 
+</div>
+<div class="gallery nol" hidden>  
+	<a target="_blank" href="49_Лучно-чорноземні_поверхнево_глеєві_слабкоосолоділі_ґрунти_на_оглеєних_лесах.jpg">  
+	<img id="img54" onmouseover="myCanvas(this.id)" src="49_Лучно-чорноземні_поверхнево_глеєві_слабкоосолоділі_ґрунти_на_оглеєних_лесах.jpg " alt="49. Лучно-чорноземні поверхнево глеєві слабкоосолоділі ґрунти на оглеєних лесах" width="200" height="400">   </a>  
+	<div class="desc">49. Лучно-чорноземні поверхнево глеєві слабкоосолоділі ґрунти на оглеєних лесах </div> 
+</div>
+<div class="gallery nol" hidden>  
+	<a target="_blank" href="50_Дернові_поверхнево_глеєві_осолоділі_ґрунти_на_оглеєних_лесах.jpg">  
+	<img id="img55" onmouseover="myCanvas(this.id)" src="50_Дернові_поверхнево_глеєві_осолоділі_ґрунти_на_оглеєних_лесах.jpg " alt="50. Дернові поверхнево глеєві осолоділі ґрунти на оглеєних лесах" width="200" height="400">   </a>  
+	<div class="desc">50. Дернові поверхнево глеєві осолоділі ґрунти на оглеєних лесах </div> 
+</div>
+<div class="gallery nol" hidden>  
+	<a target="_blank" href="51_Глеєві_сильно_осолоділі_ґрунти_(глеє-солоді)_на_оглеєних_лесах.jpg">  
+	<img id="img56" onmouseover="myCanvas(this.id)" src="51_Глеєві_сильно_осолоділі_ґрунти_(глеє-солоді)_на_оглеєних_лесах.jpg " alt="51. Глеєві сильно осолоділі ґрунти (глеє-солоді) на оглеєних лесах" width="200" height="400">   </a>  
+	<div class="desc">51. Глеєві сильно осолоділі ґрунти (глеє-солоді) на оглеєних лесах </div> 
+</div>
+<div class="gallery nol" hidden>  
+	<a target="_blank" href="52_Дернові_глеєві_солончакові_ґрунти_на_оглеєних_лесах.jpg">  
+	<img id="img57" onmouseover="myCanvas(this.id)" src="52_Дернові_глеєві_солончакові_ґрунти_на_оглеєних_лесах.jpg " alt="52. Дернові глеєві солончакові ґрунти на оглеєних лесах" width="200" height="400">   </a>  
+	<div class="desc">52. Дернові глеєві солончакові ґрунти на оглеєних лесах </div> 
+</div>
+<div class="gallery neddp" hidden>  
+	<a target="_blank" href="53_Буроземи_кислі_високогумусні_холодного_поясу_на_елюво-делювії_дрібнозернистого_піщаника.jpg">  
+	<img id="img58" onmouseover="myCanvas(this.id)" src="53_Буроземи_кислі_високогумусні_холодного_поясу_на_елюво-делювії_дрібнозернистого_піщаника.jpg " alt="53. Буроземи кислі високогумусні холодного поясу на елюво-делювії дрібнозернистого піщаника" width="200" height="400">   </a>  
+	<div class="desc">53. Буроземи кислі високогумусні холодного поясу на елюво-делювії дрібнозернистого піщаника </div> 
+</div>
+<div class="gallery nes" hidden>  
+	<a target="_blank" href="54_Буроземи_кислі_середньогумусні_помірно_холодного_поясу_на_елювії_сланців.jpg">  
+	<img id="img59" onmouseover="myCanvas(this.id)" src="54_Буроземи_кислі_середньогумусні_помірно_холодного_поясу_на_елювії_сланців.jpg " alt="54. Буроземи кислі середньогумусні помірно холодного поясу на елювії сланців" width="200" height="400">   </a>  
+	<div class="desc">54. Буроземи кислі середньогумусні помірно холодного поясу на елювії сланців </div> 
+</div>
+<div class="gallery nedab" hidden>  
+	<a target="_blank" href="55_Буроземи_кислі_малогумусні_теплого_поясу_на_елюво-делювії_андезито_базальтів,_що_підстилаються_переміщеною_червоноколірною_корою_вивітрювання.jpg">  
+	<img id="img60" onmouseover="myCanvas(this.id)" src="55_Буроземи_кислі_малогумусні_теплого_поясу_на_елюво-делювії_андезито_базальтів,_що_підстилаються_переміщеною_червоноколірною_корою_вивітрювання.jpg " alt="55. Буроземи кислі малогумусні теплого поясу на елюво-делювії андезито базальтів, що підстилаються переміщеною червоноколірною корою вивітрювання" width="200" height="400">   </a>  
+	<div class="desc">55. Буроземи кислі малогумусні теплого поясу на елюво-делювії андезито базальтів, що підстилаються переміщеною червоноколірною корою вивітрювання </div> 
+</div>
+<div class="gallery nedab" hidden>  
+	<a target="_blank" href="56_Дерново-буроземні_кислі_ґрунти_на_елюво-делювії_андезито_базальтів.jpg">  
+	<img id="img61" onmouseover="myCanvas(this.id)" src="56_Дерново-буроземні_кислі_ґрунти_на_елюво-делювії_андезито_базальтів.jpg " alt="56. Дерново-буроземні кислі ґрунти на елюво-делювії андезито базальтів" width="200" height="400">   </a>  
+	<div class="desc">56. Дерново-буроземні кислі ґрунти на елюво-делювії андезито базальтів </div> 
+</div>
+<div class="gallery nds" hidden>  
+	<a target="_blank" href="57_Підзолисто_буроземні_кислі_поверхнево_глеюваті_ґрунти_на_делювіальних_суглинках.jpg">  
+	<img id="img62" onmouseover="myCanvas(this.id)" src="57_Підзолисто_буроземні_кислі_поверхнево_глеюваті_ґрунти_на_делювіальних_суглинках.jpg " alt="57. Підзолисто бурозмені кислі поверхнево глеюваті ґрунти на делювіальних суглинках" width="200" height="400">   </a>  
+	<div class="desc">57. Підзолисто буроземні кислі поверхнево глеюваті ґрунти на делювіальних суглинках </div> 
+</div>
+<div class="gallery nds" hidden>  
+	<a target="_blank" href="58_Підзолисто_буроземні_кислі_поверхнево_глеєві_ґрунти_на_делювіальних_суглинках.jpg">  
+	<img id="img63" onmouseover="myCanvas(this.id)" src="58_Підзолисто_буроземні_кислі_поверхнево_глеєві_ґрунти_на_делювіальних_суглинках.jpg " alt="58. Підзолисто буроземні кислі поверхнево глеєві ґрунти на делювіальних суглинках" width="200" height="400">   </a>  
+	<div class="desc">58. Підзолисто буроземні кислі поверхнево глеєві ґрунти на делювіальних суглинках </div> 
+</div>
+<div class="gallery nds" hidden>  
+	<a target="_blank" href="59_Бурувато-підзолисті_кислі_поверхнево_глеєві_ґрунти_на_делювіальних_суглинках.jpg">  
+	<img id="img64" onmouseover="myCanvas(this.id)" src="59_Бурувато-підзолисті_кислі_поверхнево_глеєві_ґрунти_на_делювіальних_суглинках.jpg " alt="59. Бурувато-підзолисті кислі поверхнево глеєві ґрунти на делювіальних суглинках" width="200" height="400">   </a>  
+	<div class="desc">59. Бурувато-підзолисті кислі поверхнево глеєві ґрунти на делювіальних суглинках </div> 
+</div>
+<div class="gallery ndoav" hidden>  
+	<a target="_blank" href="60_Лучно-буроземні_кислі_слабкоглеє-елювійовані_ґрунти_на_давніх_озерно-алювіальних_відкладах.jpg">  
+	<img id="img65" onmouseover="myCanvas(this.id)" src="60_Лучно-буроземні_кислі_слабкоглеє-елювійовані_ґрунти_на_давніх_озерно-алювіальних_відкладах.jpg " alt="60. Лучно-буроземні кислі слабкоглеє-елювійовані ґрунти на давніх озерно-алювіальних відкладах" width="200" height="400">   </a>  
+	<div class="desc">60. Лучно-буроземні кислі слабкоглеє-елювійовані ґрунти на давніх озерно-алювіальних відкладах </div> 
+</div>
+<div class="gallery ndgd" hidden>  
+	<a target="_blank" href="61_Чорноземи_звичайні_міцелярно-карбонатні_передгірські_на_давньому_глинистому_делювії.jpg">  
+	<img id="img66" onmouseover="myCanvas(this.id)" src="61_Чорноземи_звичайні_міцелярно-карбонатні_передгірські_на_давньому_глинистому_делювії.jpg " alt="61. Чорноземи звичайні міцелярно-карбонатні передгірські на давньому глинистому делювії" width="200" height="400">   </a>  
+	<div class="desc">61. Чорноземи звичайні міцелярно-карбонатні передгірські на давньому глинистому делювії </div> 
+</div>
+<div class="gallery negs" hidden>  
+	<a target="_blank" href="62_Буроземи_слабкоопідзолені_на_елювії_глинистих_сланців.jpg">  
+	<img id="img67" onmouseover="myCanvas(this.id)" src="62_Буроземи_слабкоопідзолені_на_елювії_глинистих_сланців.jpg " alt="62. Буроземи слабкоопідзолені на елювії глинистих сланців" width="200" height="400">   </a>  
+	<div class="desc">62. Буроземи слабкоопідзолені на елювії глинистих сланців </div> 
+</div>
+<div class="gallery negs" hidden>  
+	<a target="_blank" href="63_Коричневі_ґрунти_сухих_лісів_та_чагарників_на_елювії_глинистих_сланців.jpg">  
+	<img id="img68" onmouseover="myCanvas(this.id)" src="63_Коричневі_ґрунти_сухих_лісів_та_чагарників_на_елювії_глинистих_сланців.jpg " alt="63. Коричневі ґрунти сухих лісів та чагарників на елювії глинистих сланців" width="200" height="400">   </a>  
+	<div class="desc">63. Коричневі ґрунти сухих лісів та чагарників на елювії глинистих сланців </div> 
+</div>
+<div class="gallery ndv" hidden>  
+	<a target="_blank" href="64_Червоно-коричневі_ґрунти_сухих_лісів_та_чагарників_на_делювії_вапняків.jpg">  
+	<img id="img69" onmouseover="myCanvas(this.id)" src="64_Червоно-коричневі_ґрунти_сухих_лісів_та_чагарників_на_делювії_вапняків.jpg " alt="64. Червоно-коричневі ґрунти сухих лісів та чагарників на делювії вапняків" width="200" height="400">   </a>  
+	<div class="desc">64. Червоно-коричневі ґрунти сухих лісів та чагарників на делювії вапняків </div> 
+</div>
+</div>
+<div class="column side">
+<div class="canv"> 
+	<canvas id="myCanvas1" width="312" height="625" alt="profile" 
+	>
+	Your browser does not support the HTML canvas tag.</canvas>
+	<div class="desc" id="d1"><br>This is the first soil profile<br> </div>
+</div>
+</div>
+</div>
+<script>
+var prev = "logo";
+function myFunction(cn) {
+    listDelete(prev);
+	listAdd(cn);
+	prev = cn;
+}
+function listDelete(str) {
+var x = document.getElementsByClassName(str);
+var l = x.length;
+for (var a = 0; a < l; a++) {
+x[a].hidden = "true";
+}
+}
+function listAdd(str1){
+var y = document.getElementsByClassName(str1);
+m = y.length;
+for (var a = 0; a < m; a++) {
+y[a].attributes.removeNamedItem("hidden");
+}
+}
+function myCanvas(p) {
+  var c = document.getElementById("myCanvas1");
+  var ctx = c.getContext("2d");
+  c.height = (screen.availHeight - 100);
+  var img = document.getElementById(p);
+  alert (screen.availHeight);
+  ctx.drawImage(img,1,1,312,(screen.availHeight - 100));
+  document.getElementById("d1").innerHTML = document.getElementById(p).alt;
+
+}
+</script>
+</body>
+</html>

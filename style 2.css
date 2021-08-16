@@ -1,0 +1,47 @@
+canvas {
+	float:center;
+	width:33,33%;
+	margin: 0px;
+	height: 675px;
+	border: 0px solid #d3d3d3;
+}
+div.gallery {
+  margin: 5px;
+  border: 1px solid black; 
+  float: left;
+  width: 312px;
+  transition: 5sec all;
+  transform: scale (0.9);
+  
+}
+div.gallery {
+	transform: scale (0.9) rotate (15deg);
+}
+div.desc {
+  font-size: 20px;
+  float: center;
+  width: auto;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  height: auto;
+  border:1px solid #d3d3d3;
+
+}
+div.chornozem {
+	margin: 5px;
+	padding: 5px;
+	width: 200px;
+	height: 150px;
+	float: left;
+	text-align: center;
+    border: 1px solid black;
+	transition: 5s all;
+	
+}
+div.chornozem:hover {
+	/* border: 1px solid black; */
+	color: white;
+	background-color: grey;
+	/* transform: rotate(15deg); */
+}

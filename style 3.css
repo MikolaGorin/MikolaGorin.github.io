@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+.row {
+	margin: 5 px;
+}
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.first {
+    width: 332px;
+}
+
+/* Middle column */
+.column.second {
+  width: 1000px;
+ }
+div.image {
+	margin : 10px;
+	border: 1px solid black;
+	padding:  10 px;
+}
+div.profile {
+	transform: translate(0px);
+	transition: all 1s;
+	
+}
+div.index {
+	width: 10%;
+	height: 15%;
+	float: left;
+	margin : 10px;
+	padding: 10px;
+	font-size: 25pt;
+	text-align: center;
+}
+div.depth {
+	width: 25%;
+	height: 15%;
+	float: left;
+	margin : 10px;
+	padding: 10px;
+	font-size: 25pt;
+	text-align: center;
+}
+div.horizon {
+	width: 50%;
+	height: 15%;
+	float: left;
+	padding: 10px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+/* Clear floats after the columns */
+
+
+//
+canvas {
+	float:center;
+	width:33,33%;
+	margin: 0px;
+	height: 675px;
+	border: 0px solid #d3d3d3;
+}
+div.gallery {
+  margin: 5px;
+  border: 1px solid black; 
+  float: left;
+  width: 312px;
+  transition: 5sec all;
+  transform: scale (0.9) rotate(0deg);
+  
+}
+div.gallery:hover {
+	transform: scale(0.9) rotate(15deg);
+}
+div.desc {
+  width: auto;
+  height: 120px;
+  font-size: 20px;
+  float: center;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  border:1px solid #d3d3d3;
+
+}
+div.chornozem {
+	margin: 5px;
+	padding: 5px;
+	width: 200px;
+	height: 90px;
+	float: left;
+	text-align: center;
+    border: 1px solid black;
+}
+div.chornozem:hover {
+	/* border: 1px solid black; */
+	color: white;
+	background-color: grey;
+}
+#container {
+	width: 1600px;
+	height: 700px;
+	position: relative;
+}
+#animate {
+	width: 1400px;
+	height: 600px;
+	position: absolute;
+}
